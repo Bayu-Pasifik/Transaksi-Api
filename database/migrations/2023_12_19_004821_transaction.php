@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::dropIfExists('transactions');
         Schema::create('transactions', function (Blueprint $table) {
             $table->id('id_transaksi');
+            $table->string('id_proses');
             $table->String('nama_pelanggan');
             $table->String('nama_barang');
             $table->integer('harga_barang');
